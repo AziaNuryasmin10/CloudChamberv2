@@ -38,8 +38,8 @@ while True:
     print(boxes_ids)
     for box_id in boxes_ids:
         X, Y, W, h, id = box_id
-        cv2.putText(roi, str(id), (x, y - 15), cv2.FONT_HERSHEY_PLAIN, 4, (255, 0, 0), 4)
-        # cv2.putText(roi, str('alpha'), (x, y - 15), cv2.FONT_HERSHEY_PLAIN, 2, (255, 0, 0), 4)
+        #cv2.putText(roi, str(id), (x, y - 15), cv2.FONT_HERSHEY_PLAIN, 4, (255, 0, 0), 4)
+        cv2.putText(roi, str('particles'), (x, y - 15), cv2.FONT_HERSHEY_PLAIN, 2, (255, 0, 0), 4)
         # cv2.putText(roi, str('muon'), (x, y - 25), cv2.FONT_HERSHEY_PLAIN, 2, (255, 0, 0), 4)
         # cv2.putText(roi, str('electron'), (x, y - 35), cv2.FONT_HERSHEY_PLAIN, 3, (255, 0, 0), 4)
         # cv2.putText(roi, str('photoelectron'), (x, y - 45), cv2.FONT_HERSHEY_PLAIN, 4, (255, 0, 0), 4)
